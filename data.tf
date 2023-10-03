@@ -18,7 +18,7 @@ locals {
   workspace_vars = {
     s3_buckets = {
       "terraform_state" = {
-        "name" = {
+        "bucket_name" = {
           value       = "terraform_state"
           description = "S3 Bucket for TFCE to TFC Migration Demos"
           category    = "terraform"
