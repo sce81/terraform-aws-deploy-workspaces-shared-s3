@@ -3,7 +3,7 @@ terraform {
     organization = "HashiCorp_TFC_Automation_Demo"
 
     workspaces {
-      name = "deploy-workspaces-shared-services"
+      name = "terraform-aws-deploy-workspaces-shared-services"
     }
   }
   required_providers {
