@@ -36,7 +36,7 @@ locals {
         "project_name" = {
           value       = "AWS S3 Bucket for storing Terraform CE Statefiles"
           description = "Descriptive tag for bucket purpose"
-          category    = "terraform CE"
+          category    = "terraform"
         },
       },
     }
