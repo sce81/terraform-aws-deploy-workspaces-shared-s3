@@ -6,7 +6,7 @@ module "TFC_Workspace_S3_Buckets" {
   for_each                      = local.workspace_vars.s3_buckets
   source                        = "app.terraform.io/HashiCorp_TFC_Automation_Demo/workspace-management/tfe"
   version                       = "2.0.9"
-  name                          = "aws_workspace_s3_${each.key}"
+  name                          = "aws_workspace_s3_bucket_${each.key}"
   organization                  = data.tfe_organization.main.name
   vcs_repo                      = local.secure_s3_repo
   tfe_variables                 = each.value
