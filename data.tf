@@ -16,13 +16,18 @@ locals {
   ]
 
   workspace_vars = {
-    base_infra_vars = {
+    s3_buckets = {
       "terraform_state" = {
         "name" = {
           value       = "terraform_state"
           description = "S3 Bucket for TFCE to TFC Migration Demos"
           category    = "terraform"
-        }
+        },
+        "description" = {
+          value       = "AWS S3 Bucket for storing Terraform CE Statefiles"
+          description = "Descriptive tag for bucket purpose"
+          category    = "terraform"
+        },
       },
     }
   }
