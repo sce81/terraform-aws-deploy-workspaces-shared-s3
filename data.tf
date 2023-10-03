@@ -19,7 +19,7 @@ locals {
     s3_buckets = {
       "terraform-state" = {
         "bucket_name" = {
-          value       = "terraform_state"
+          value       = "terraform-state"
           description = "S3 Bucket for TFCE to TFC Migration Demos"
           category    = "terraform"
         },
