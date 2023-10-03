@@ -10,7 +10,7 @@ module "TFC_Workspace_S3_Buckets" {
   organization                  = data.tfe_organization.main.name
   vcs_repo                      = local.secure_s3_repo
   tfe_variables                 = each.value
-  project_id                    = tfe_project.shared_services.name
+  project_id                    = tfe_project.shared_services.id
   structured_run_output_enabled = "false"
   workspace_tags                = [each.key, "aws", "s3", "deployment", "platform", "shared-services"]
   sentinel_policy               = flatten(["Require-Resources-from-PMR", "Enforce-Tagging-Policy", var.sentinel_policies])
